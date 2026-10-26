@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نەخۆشخانەی هەرێم</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Preload Custom Rabar_021 Font -->
+    <link rel="preload" href="Rabar_021.ttf" as="font" type="font/ttf" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/Logo.jpeg">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+
+<body>
+
+    <!-- Ambient Glowing Background Elements -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <img src="assets/Logo.jpeg" alt="لۆگۆی نەخۆشخانەی هەرێم" class="brand-logo-img">
+                <div class="brand-text">
+                    <span class="brand-title">نەخۆشخانەی هەرێم</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">سەرەتا</a>
+                <a href="#about" class="nav-link">دەربارەی ئێمە</a>
+                <a href="#clients" class="nav-link">کڕیارەکانمان</a>
+                <a href="#services" class="nav-link">خزمەتگوزارییەکان</a>
+                <a href="#offer" class="nav-link highlight">ئۆفەری تایبەت</a>
+                <a href="#portfolio" class="nav-link">نمونەی کارەکان</a>
+                <a href="#contact" class="nav-link">پەیوەندی</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION (Slide 1) -->
+        <section class="hero-section" id="hero">
+            <div class="hero-particles" id="heroParticles"></div>
+            <div class="container hero-container">
+                <div class="hero-content" data-reveal="fade-up">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">نەخۆشخانەی هەرێم</span>
+                    </h1>
+
+                    <p class="hero-desc">
+                        ستراتیژیەکی هاوچەرخ و پیشەیی بۆ گەشەپێدانی ناوبانگ، ڕاکێشانی نەخۆش و دروستکردنی باڵادەستی
+                        دیجیتاڵی لەسەر ئاستی هەرێمی کوردستان.
+                    </p>
+
+                    <!-- Quick Metrics -->
+                    <div class="hero-metrics">
+                        <div class="metric-item">
+                            <span class="metric-num" data-count="2023">٢٠٢٣</span>
+                            <span class="metric-label">ساڵی دامەزراندن</span>
+                        </div>
+                        <div class="metric-divider"></div>
+                        <div class="metric-item">
+                            <span class="metric-num" data-count="6">+٦</span>
+                            <span class="metric-label">نەخۆشخانەی بەناوبانگ</span>
+                        </div>
+                        <div class="metric-divider"></div>
+                        <div class="metric-item">
+                            <span class="metric-num" data-count="100">%١٠٠</span>
+                            <span class="metric-label">کوالیتی پیشەیی</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual" data-reveal="fade-left">
+                    <div class="visual-card-wrapper">
+                        <div class="visual-glow"></div>
+                        <div class="glass-card main-visual-card">
+                            <div class="card-header-bar">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="card-bar-title">Harem Hospital Marketing Strategy</span>
+                            </div>
+                            <div class="card-media-box">
+                                <img src="assets/image3.jpg" alt="Medical Marketing Visual" class="card-image"
+                                    id="heroFeaturedImage">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION (Slide 3) -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-badge" data-reveal="fade-up">دەربارەی ئێمە</div>
+                <div class="about-grid">
+                    <div class="about-image-col" data-reveal="fade-right">
+                        <div class="about-image-frame">
+                            <img src="assets/image12.jpeg" alt="Medical Team Work" class="about-img">
+                            <div class="frame-backdrop"></div>
+                            <div class="experience-card">
+                                <span class="exp-number">٢٠٢٣</span>
+                                <span class="exp-title">دامەزراندن لەسەر بنەمای زانستی مارکێتینگ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content-col" data-reveal="fade-left">
+                        <h2 class="section-title">
+                            تیمێکی پیشەیی لە بواری
+                            <span class="gradient-text">مارکێتینگی پزیشکی</span>
+                        </h2>
+
+                        <p class="about-lead">
+                            ئێمە وەک تیمێکی پیشەیی لە بواری مێدیکاڵ مارکێتینگدا کاردەکەین، پسپۆڕین لە دروستکردنی
+                            ناوەڕۆکی ڤیدیۆیی و گرافیکی و بەڕێوەبردنی سۆشیال میدیا.
+                        </p>
+
+                        <p class="about-desc">
+                            ئامانجمان ئەوەیە بە شێوازێکی مۆدێرن و سەردەمیانە خزمەت بە بواری تەندروستی بکەین و کار و
+                            پیشەی دکتۆرەکان بە باشترین شێوە بخەینە بەرچاوی بینەرەوە لەڕێی دیمەن و ناوەڕۆکی بەرز و
+                            پیشەییەوە.
+                        </p>
+
+                        <div class="pillars-list">
+                            <div class="pillar-card">
+                                <div class="pillar-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m22 8-6 4 6 4V8Z" />
+                                        <rect width="14" height="12" x="2" y="6" rx="2" />
+                                    </svg>
+                                </div>
+                                <div class="pillar-text">
+                                    <h3>ڤیدیۆی پزیشکی</h3>
+                                    <p>گرتەی پرۆفیشناڵ، ئیدیت و مۆنتاژی تەندروستی بە سەردەمیانەترین ستاندارد.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-card">
+                                <div class="pillar-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="18" cy="5" r="3" />
+                                        <circle cx="6" cy="12" r="3" />
+                                        <circle cx="18" cy="19" r="3" />
+                                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                                    </svg>
+                                </div>
+                                <div class="pillar-text">
+                                    <h3>سۆشیال میدیا</h3>
+                                    <p>بەڕێوەبردنی پێشکەوتووی پەیجەکان، وەڵامدانەوەی خێرا و ئاراستەکردنی بینەران.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-card">
+                                <div class="pillar-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                                        <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                                        <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                                        <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                                        <path
+                                            d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2Z" />
+                                    </svg>
+                                </div>
+                                <div class="pillar-text">
+                                    <h3>دیزاینی گرافیکی</h3>
+                                    <p>دیزاینی سەرنجڕاکێشی تەندروستی ، بە ڕەنگ و شێوازی تایبەت بە ناسنامەی نەخۆشخانە.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUSTED CLIENTS / HOSPITALS (Slide 4) -->
+        <section class="section clients-section" id="clients">
+            <div class="container">
+                <div class="section-header text-center" data-reveal="fade-up">
+                    <div class="section-badge">زیاتر لە کۆمپانیاکەمان</div>
+                    <h2 class="section-title">
+                        کڕیارە دڵسۆزەکانمان لە شاری
+                        <span class="gradient-text">هەولێر و سلێمانی</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        کۆمپانیاکەمان لە ساڵی ٢٠٢٣ دەستی کرد بە کارەکانی، دوای ماندووبوونی ستافە دڵسۆزەکەمان، ئەمڕۆ
+                        نمونەی کارەکانمان شاهیدی کوالێتی و ئەزموونی تیمەکەمانە.
+                    </p>
+                </div>
+
+                <div class="clients-grid" data-reveal="fade-up">
+                    <div class="client-card">
+                        <div class="client-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21h18" />
+                                <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16" />
+                                <path d="M12 7v4" />
+                                <path d="M10 9h4" />
+                                <path d="M9 14h6" />
+                                <path d="M9 17h6" />
+                            </svg>
+                        </div>
+                        <h3 class="client-name">نەخۆشخانەی ماجیدی</h3>
+                        <span class="client-city">هەولێر</span>
+                        <div class="client-glow"></div>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="client-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                <path d="M12 8v8" />
+                                <path d="M8 12h8" />
+                            </svg>
+                        </div>
+                        <h3 class="client-name">ئەربیل ئینتەرناشناڵ</h3>
+                        <span class="client-city">هەولێر</span>
+                        <div class="client-glow"></div>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="client-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                <path d="M12 7v6" />
+                                <path d="M9 10h6" />
+                            </svg>
+                        </div>
+                        <h3 class="client-name">ژین ئینتەرناشناڵ</h3>
+                        <span class="client-city">هەولێر</span>
+                        <div class="client-glow"></div>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="client-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <path d="M12 7v10" />
+                                <path d="M7 12h10" />
+                            </svg>
+                        </div>
+                        <h3 class="client-name">سی ئێم سی (CMC)</h3>
+                        <span class="client-city">هەولێر</span>
+                        <div class="client-glow"></div>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="client-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 21h20" />
+                                <path d="M4 21V9a2 2 0 0 1 2-2h4v14" />
+                                <path d="M10 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16" />
+                                <path d="M15 7v4" />
+                                <path d="M13 9h4" />
+                                <path d="M7 11h1" />
+                                <path d="M7 15h1" />
+                            </svg>
+                        </div>
+                        <h3 class="client-name">نەخۆشخانەی فارووق</h3>
+                        <span class="client-city">سلێمانی</span>
+                        <div class="client-glow"></div>
+                    </div>
+
+                    <div class="client-card">
+                        <div class="client-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3" />
+                                <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4" />
+                                <circle cx="20" cy="10" r="2" />
+                            </svg>
+                        </div>
+                        <h3 class="client-name">دکتۆرانی سلێمانی</h3>
+                        <span class="client-city">سلێمانی</span>
+                        <div class="client-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION (Slide 5) -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-header text-center" data-reveal="fade-up">
+                    <div class="section-badge">کاری ئێمە</div>
+                    <h2 class="section-title">
+                        ئەو خزمەتگوزاریانەی
+                        <span class="gradient-text">پێشکەشیان دەکەین</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        بە بەکارهێنانی نوێترین تەکنەلۆژیا و کەرەستەی کامێرا و پرۆگرامی پیشەیی، ناوەڕۆکێک دروست دەکەین
+                        شایستەی ناوی نەخۆشخانەی هەرێم بێت.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card" data-reveal="fade-up" data-delay="100">
+                        <div class="service-number">٠١</div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">بەڕێوەبردنی پەیج</h3>
+                        <p class="service-lead">فەیسبووک، ئینستاگرام و تیک‌تۆک</p>
+                        <p class="service-desc">
+                            بەڕێوەبردنی ڕۆژانە و بەردەوامی سەرجەم ئەکاونتەکان، پلانی کات و بڵاوکردنەوەی ستراتیژی،
+                            چاودێری کۆمێنت و پەیامەکان و گەیاندنی وەڵامی پێویست بە نەخۆشەکان.
+                        </p>
+                        <ul class="service-features">
+                            <li>بڵاوکردنەوەی بەردەوام و پلانداڕێژراو</li>
+                            <li>وەڵامدانەوە و ئاراستەکردنی سەردانکەران</li>
+                            <li>ستراتیژی زیادکردنی بینەر و کارلێک</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card featured" data-reveal="fade-up" data-delay="200">
+                        <div class="service-badge-top">گرنگترین خزمەتگوزاری</div>
+                        <div class="service-number">٠٢</div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="23 7 16 12 23 17 23 7" />
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">دروستکردنی ڤیدیۆ</h3>
+                        <p class="service-lead">ڤیدیۆی پیشەیی بۆ سۆشیال میدیا</p>
+                        <p class="service-desc">
+                            تۆمارکردنی ڤیدیۆی 4K لەناو نەخۆشخانە، دیداری پزیشکەکان، ناساندنی بەشەکان و نەشتەرگەرییەکان،
+                            مۆنتاژی پێشکەوتوو بە دەنگ و ڕووناکیی سینەمایی.
+                        </p>
+                        <ul class="service-features">
+                            <li>ڤیدیۆگرافی و مۆنتاژی پیشەیی</li>
+                            <li>دیداری تایبەت لەگەڵ پزیشکە پسپۆڕەکان</li>
+                            <li>ڕیلی کورت بە بینەری زۆرەوە بۆ تیک‌تۆک و ئینستاگرام</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card" data-reveal="fade-up" data-delay="300">
+                        <div class="service-number">٠٣</div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                <circle cx="8.5" cy="8.5" r="1.5" />
+                                <polyline points="21 15 16 10 5 21" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">دیزاینی پۆست</h3>
+                        <p class="service-lead">ناوەڕۆک و گرافیکی مۆدێرن</p>
+                        <p class="service-desc">
+                            دیزاینی پۆستی ڕۆشنبیری پزیشکی، ئاگاداری و نرخ، ناساندنی پزیشکان و خزمەتگوزارییەکان بە
+                            تایپۆگرافی جوان و ڕەنگەکانی نەخۆشخانەی هەرێم.
+                        </p>
+                        <ul class="service-features">
+                            <li>ناوەڕۆکی هۆشیاری و پزیشکی باوەڕپێکراو</li>
+                            <li>هەماهەنگی تەواو لەگەڵ شوناسی نەخۆشخانە</li>
+                            <li>دیزاینی مۆدێرن بە بەرزترین ڕوونی</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPECIAL OFFER & PRICING (Slide 6) -->
+        <section class="section offer-section" id="offer">
+            <div class="container">
+                <div class="section-header text-center" data-reveal="fade-up">
+                    <div class="section-badge highlight-badge">ئۆفەری خزمەتگوزاری</div>
+                    <h2 class="section-title">
+                        پێکهاتەی مانگانەی کارەکانمان بۆ
+                        <span class="gradient-text">نەخۆشخانەی هەرێم</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        پاکێجێکی تایبەت و تەواو بۆ بەدەستهێنانی باشترین ئەنجامی مارکێتینگی پزیشکی بە گونجاوترین
+                        تێچوو.
+                    </p>
+                </div>
+
+                <div class="pricing-card-wrapper" data-reveal="zoom-in">
+                    <div class="pricing-glow-bg"></div>
+                    <div class="pricing-card">
+                        <div class="pricing-ribbon">
+                            <span>ئۆفەری تایبەت</span>
+                        </div>
+
+                        <div class="pricing-header">
+                            <div class="pricing-title-box">
+                                <span class="pricing-subtitle">پاکێجی گشتگیری مێدیکاڵ مارکێتینگ</span>
+                                <h3 class="pricing-main-title">نەخۆشخانەی هەرێم</h3>
+                            </div>
+                            <div class="price-display">
+                                <div class="price-label">نرخی مانگانە</div>
+                                <div class="price-amount">
+                                    <span class="currency">IQD</span>
+                                    <span class="number">٤٥٠,٠٠٠</span>
+                                </div>
+                                <div class="price-period">دیناری عێراقی / مانگانە</div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-divider"></div>
+
+                        <div class="pricing-deliverables">
+                            <h4 class="deliverables-heading">پێکهاتەی پاکێجەکە ئەمانەی خوارەوە لەخۆ دەگرێت :</h4>
+
+                            <div class="deliverables-grid">
+                                <div class="deliverable-item">
+                                    <div class="del-icon">
+                                        <span class="del-count">١٠</span>
+                                    </div>
+                                    <div class="del-info">
+                                        <strong>پۆستی سۆشیال میدیا</strong>
+                                        <p>دیزاین و ئامادەکردنی پۆستی گرافیکی بۆ فەیسبووک، ئینستاگرام و تیک‌تۆک بە
+                                            زانیاری پزیشکی سەردەمیانە.</p>
+                                    </div>
+                                </div>
+
+                                <div class="deliverable-item highlight-del">
+                                    <div class="del-icon video-icon">
+                                        <span class="del-count">٨</span>
+                                    </div>
+                                    <div class="del-info">
+                                        <strong>ڤیدیۆی پیشەیی (Reels & Shorts)</strong>
+                                        <p>ئیدیتکردن، ڤیدیۆگرافی و مۆنتاژی پیشەیی، دیدار و ڕوونکردنەوەی پزیشکان لەگەڵ
+                                            دیمەنی نەخۆشخانە.</p>
+                                    </div>
+                                </div>
+
+                                <div class="deliverable-item">
+                                    <div class="del-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                    </div>
+                                    <div class="del-info">
+                                        <strong>بەڕێوەبردنی تەواوی پەیجەکان</strong>
+                                        <p>پلاندانان، بڵاوکردنەوەی ڕۆژانە، ڕێکخستنی کۆمێنت و پەیامەکان لە سەرجەم
+                                            پلاتفۆرمەکان.</p>
+                                    </div>
+                                </div>
+
+                                <div class="deliverable-item">
+                                    <div class="del-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                    </div>
+                                    <div class="del-info">
+                                        <strong>ڕاپۆرتی مانگانەی گەشەکردن</strong>
+                                        <p>شیکاری وردی ژمارەی بینەر، کارلێکی نەخۆشەکان و پێشنیار بۆ بەردەوامی سەرکەوتن.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-cta-box">
+                            <a href="https://wa.me/9647738074310?text=سڵاو،%20لەبارەی%20پلانی%20مارکێتینگی%20نەخۆشخانەی%20هەرێم%20پەیوەندی%20دەکەم"
+                                class="btn btn-whatsapp" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z" />
+                                </svg>
+                                <span>پەسەندکردنی ئۆفەر و دەستپێکردن</span>
+                            </a>
+                            <p class="pricing-note">تیمەکەمان ئامادەیە ڕاستەوخۆ دەست بە ئامادەکارییەکان بکات.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO / WORK SHOWCASE (Slides 7, 8, 9) -->
+        <section class="section portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center" data-reveal="fade-up">
+                    <div class="section-badge">نمونەی کارەکانمان</div>
+                    <h2 class="section-title">
+                        ئێمە بە
+                        <span class="gradient-text">جیاوازی دەیکەین</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        کۆمەڵێک نمونە لە کارە جۆراوجۆرەکانمان بۆ نەخۆشخانە و کڕیارە پزیشکییەکان، لە ڤیدیۆی کورت و ڕیل بۆ
+                        ناوەڕۆکی گرافیکی سەردەمیانە.
+                    </p>
+                </div>
+
+                <!-- Showcase Phone Mockups Carousel (Slide 7 & 8) -->
+                <div class="mockups-showcase-container" data-reveal="fade-up">
+                    <div class="mockups-header">
+                        <span class="mockups-tag">نمایشکردنی ڕیلی سۆشیال میدیا</span>
+                        <div class="mockups-nav-btns">
+                            <button class="mockup-btn prev" id="prevMockup" aria-label="Previous">❮</button>
+                            <button class="mockup-btn next" id="nextMockup" aria-label="Next">❯</button>
+                        </div>
+                    </div>
+
+                    <div class="mockups-slider-track" id="mockupsTrack">
+                        <!-- Mockup 1 -->
+                        <a href="https://www.instagram.com/liberty_dental_center/reel/Dd6uyBRuHvS/" target="_blank"
+                            rel="noopener" class="phone-mockup-card" data-index="1"
+                            data-url="https://www.instagram.com/liberty_dental_center/reel/Dd6uyBRuHvS/">
+                            <div class="phone-frame">
+                                <div class="phone-camera-notch"></div>
+                                <div class="phone-screen">
+                                    <img src="assets/dental_center.png" alt="Liberty Dental Center Reel"
+                                        class="screen-img">
+                                    <div class="play-overlay">
+                                        <div class="play-btn-circle">
+                                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon points="5 3 19 12 5 21 5 3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-caption">
+                                <h4>ڕیلی سەنتەری ددان</h4>
+                                <span>Dental Center • Hollywood Smile</span>
+                            </div>
+                        </a>
+
+                        <!-- Mockup 2 -->
+                        <a href="https://www.instagram.com/reel/DRr1EYZiPEu/?igsh=MWVyZHM5bTdhNmZ6OA%3D%3D"
+                            target="_blank" rel="noopener" class="phone-mockup-card active" data-index="2"
+                            data-url="https://www.instagram.com/reel/DRr1EYZiPEu/?igsh=MWVyZHM5bTdhNmZ6OA%3D%3D">
+                            <div class="phone-frame">
+                                <div class="phone-camera-notch"></div>
+                                <div class="phone-screen">
+                                    <img src="assets/image21.png" alt="Medical Reel Showcase 2" class="screen-img">
+                                    <div class="play-overlay">
+                                        <div class="play-btn-circle">
+                                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon points="5 3 19 12 5 21 5 3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-caption">
+                                <h4>تەسویری نەشتەرگەری و کلینیک</h4>
+                                <span>دیمەنی پیشەیی و مۆنتاژ</span>
+                            </div>
+                        </a>
+
+                        <!-- Mockup 3 -->
+                        <a href="https://www.instagram.com/reel/DaOB-1DsAVk/?igsh=MWE1c3EwcXpxbWg1eA%3D%3D"
+                            target="_blank" rel="noopener" class="phone-mockup-card" data-index="3"
+                            data-url="https://www.instagram.com/reel/DaOB-1DsAVk/?igsh=MWE1c3EwcXpxbWg1eA%3D%3D">
+                            <div class="phone-frame">
+                                <div class="phone-camera-notch"></div>
+                                <div class="phone-screen">
+                                    <img src="assets/image22.png" alt="Medical Reel Showcase 3" class="screen-img">
+                                    <div class="play-overlay">
+                                        <div class="play-btn-circle">
+                                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon points="5 3 19 12 5 21 5 3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-caption">
+                                <h4>ئاگاداری و زانیاری نەخۆشخانە</h4>
+                                <span>ناوەڕۆکی سەرنجڕاکێش</span>
+                            </div>
+                        </a>
+
+                        <!-- Mockup 4 -->
+                        <a href="https://www.instagram.com/reel/DadlH-biP_I/?igsh=amZrYXY3OTNuOTQx" target="_blank"
+                            rel="noopener" class="phone-mockup-card" data-index="4"
+                            data-url="https://www.instagram.com/reel/DadlH-biP_I/?igsh=amZrYXY3OTNuOTQx">
+                            <div class="phone-frame">
+                                <div class="phone-camera-notch"></div>
+                                <div class="phone-screen">
+                                    <img src="assets/image23.png" alt="Medical Reel Showcase 4" class="screen-img">
+                                    <div class="play-overlay">
+                                        <div class="play-btn-circle">
+                                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon points="5 3 19 12 5 21 5 3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-caption">
+                                <h4>ناساندنی پسپۆڕییەکان</h4>
+                                <span>بەرزترین ئاستی بینەر</span>
+                            </div>
+                        </a>
+
+                        <!-- Mockup 5 -->
+                        <a href="https://www.instagram.com/reel/DaQNvUbNJdS/?igsh=Z2V5Mng0ZnRmYTA4" target="_blank"
+                            rel="noopener" class="phone-mockup-card" data-index="5"
+                            data-url="https://www.instagram.com/reel/DaQNvUbNJdS/?igsh=Z2V5Mng0ZnRmYTA4">
+                            <div class="phone-frame">
+                                <div class="phone-camera-notch"></div>
+                                <div class="phone-screen">
+                                    <img src="assets/image24.png" alt="Medical Reel Showcase 5" class="screen-img">
+                                    <div class="play-overlay">
+                                        <div class="play-btn-circle">
+                                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon points="5 3 19 12 5 21 5 3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-caption">
+                                <h4>دیداری تایبەت</h4>
+                                <span>ستایلی هاوچەرخ</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- CONTACT & LOCATIONS (Slide 10) -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-card-box" data-reveal="fade-up">
+                    <div class="contact-header text-center">
+                        <div class="section-badge">پەیوەندیمان پێوە بکەن</div>
+                        <h2 class="section-title">
+                            سوپاس بۆ هەڵبژاردنی ئێمە
+                            <br>
+                            <span class="gradient-text">بە متمانەوە کارەکانت بە ئێمە بسپێرە</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            نووسینگەکانمان لە هەر دوو پایتەختی ڕۆشنبیری و ئابووری کوردستان لە خزمەتتدان
+                        </p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <!-- Sulaymaniyah Location -->
+                        <div class="location-card">
+                            <div class="loc-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="loc-details">
+                                <span class="loc-city">سلێمانی</span>
+                                <h4 class="loc-address">٣٠ مەتری بەرامبەر چاپخانەی هەردی</h4>
+                                <span class="loc-status">نووسینگەی سەرەکی</span>
+                            </div>
+                        </div>
+
+                        <!-- Erbil Location -->
+                        <div class="location-card">
+                            <div class="loc-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="loc-details">
+                                <span class="loc-city">هەولێر</span>
+                                <h4 class="loc-address">لالاڤ ئێرپۆرت بەرامبەر فڕۆکەخانە</h4>
+                                <span class="loc-status">نووسینگەی هەولێر</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Phone Banner -->
+                    <div class="phone-call-banner">
+                        <div class="pcb-content">
+                            <div class="pcb-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div class="pcb-text">
+                                <span class="pcb-label">ژمارەی پەیوەندی و واتسئەپ</span>
+                                <a href="tel:07738074310" class="pcb-phone" dir="ltr">0773 807 4310</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 10 Visual Showcase Banner -->
+                    <div class="contact-visual-wrapper">
+                        <img src="assets/image25.png" alt="Office & Team Visual" class="contact-visual-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="assets/Logo.jpeg" alt="لۆگۆی نەخۆشخانەی هەرێم" class="footer-logo-img">
+                <div>
+                    <h4>نەخۆشخانەی هەرێم — هاوبەشی مارکێتینگ</h4>
+                    <p>ئامادەکراوە لەلایەن دانەر عومەر بۆ مامۆستا سالار — بەڕێوبەری کارگێڕی</p>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="#hero">سەرەتا</a>
+                <a href="#services">خزمەتگوزارییەکان</a>
+                <a href="#offer">ئۆفەری مانگانە</a>
+                <a href="#portfolio">نمونەی کارەکان</a>
+                <a href="#contact">پەیوەندی</a>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Fullscreen Mockup Preview -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close modal">✕</button>
+            <img src="" alt="Fullscreen Preview" id="lightboxImage">
+            <h4 class="lightbox-caption" id="lightboxCaption"></h4>
+        </div>
+    </div>
+
+    <!-- Floating Action Button for Instant WhatsApp -->
+    <a href="https://wa.me/9647738074310?text=سڵاو،%20لەبارەی%20پلانی%20مارکێتینگی%20نەخۆشخانەی%20هەرێم%20پەیوەندی%20دەکەم"
+        class="fab-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp Contact">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z" />
+        </svg>
+    </a>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
