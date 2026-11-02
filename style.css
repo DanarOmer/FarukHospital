@@ -87,6 +87,7 @@ html {
     font-family: var(--font-kurdish);
     scrollbar-width: none;
     -ms-overflow-style: none;
+    overflow-x: hidden;
 }
 
 body {
@@ -2263,6 +2264,8 @@ li {
         transform: translateY(-150%);
         transition: transform var(--transition-smooth);
         z-index: 99;
+        max-height: calc(100dvh - 75px);
+        overflow-y: auto;
     }
 
     .nav-menu.open {
@@ -2977,31 +2980,205 @@ li {
     margin: 0;
 }
 
-/* Responsiveness */
-@media (max-width: 1024px) {
+/* Comprehensive Multi-Device Responsiveness for Packages */
+@media (min-width: 769px) and (max-width: 1024px) {
     .packages-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .packages-grid > .package-card:nth-child(3) {
+        grid-column: span 2;
+        max-width: 560px;
+        margin-inline: auto;
+        width: 100%;
     }
     .package-card.featured-package {
         transform: none;
     }
     .package-card.featured-package:hover {
-        transform: translateY(-8px);
+        transform: translateY(-6px);
     }
     .pkg-addons-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .pkg-addons-grid > .pkg-addon-card:nth-child(3) {
+        grid-column: span 2;
+        max-width: 560px;
+        margin-inline: auto;
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
+    .packages-section {
+        padding-block: 70px;
+    }
     .packages-grid {
         grid-template-columns: 1fr;
-        gap: 36px;
+        gap: 30px;
+        max-width: 520px;
+        margin-inline: auto;
+        width: 100%;
+    }
+    .packages-grid > .package-card:nth-child(3) {
+        grid-column: auto;
+        max-width: 100%;
+    }
+    .package-card {
+        padding: 30px 22px;
+    }
+    .package-card.featured-package {
+        transform: none;
+    }
+    .package-card.featured-package:hover {
+        transform: translateY(-5px);
+    }
+    .pkg-addons-wrapper {
+        padding: 32px 20px;
+        max-width: 520px;
+        margin-inline: auto;
+        width: 100%;
+    }
+    .pkg-addons-title {
+        font-size: 1.4rem;
     }
     .pkg-addons-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .pkg-addons-grid > .pkg-addon-card:nth-child(3) {
+        grid-column: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .packages-section {
+        padding-block: 54px;
+    }
+    .packages-grid {
+        gap: 24px;
+    }
+    .package-card {
+        padding: 24px 16px;
+        border-radius: var(--radius-lg);
+    }
+    .pkg-badge-popular {
+        font-size: 0.72rem;
+        padding: 4px 12px;
+        top: -13px;
+        letter-spacing: 0;
+    }
+    .pkg-tier {
+        font-size: 0.8rem;
+    }
+    .pkg-name {
+        font-size: 1.35rem;
+    }
+    .pkg-desc {
+        min-height: auto;
+        font-size: 0.86rem;
+        line-height: 1.5;
+        margin-bottom: 14px;
+    }
+    .pkg-price-box {
+        gap: 2px;
+    }
+    .pkg-price {
+        font-size: 2.3rem;
+    }
+    .pkg-currency {
+        font-size: 1.25rem;
+    }
+    .pkg-period {
+        font-size: 0.82rem;
+    }
+    .pkg-divider {
+        margin-bottom: 18px;
+    }
+    .pkg-features {
+        gap: 12px;
+        margin-bottom: 22px;
+    }
+    .pkg-features li {
+        font-size: 0.88rem;
+        gap: 10px;
+        line-height: 1.5;
+    }
+    .pkg-icon {
+        width: 20px;
+        height: 20px;
+        margin-top: 3px;
+    }
+    .pkg-icon svg {
+        width: 12px;
+        height: 12px;
+    }
+    .pkg-feature-text strong {
+        font-size: 0.88rem;
+    }
+    .pkg-feature-text span {
+        font-size: 0.84rem;
+    }
+    .btn-pkg {
+        padding: 12px 16px;
+        font-size: 0.92rem;
+        border-radius: 10px;
+        min-height: 44px;
     }
     .pkg-addons-wrapper {
-        padding: 30px 20px;
+        padding: 22px 14px;
+        border-radius: var(--radius-lg);
+    }
+    .pkg-addons-title {
+        font-size: 1.25rem;
+    }
+    .pkg-addons-sub {
+        font-size: 0.84rem;
+        margin-bottom: 20px;
+    }
+    .pkg-addon-card {
+        padding: 16px 14px;
+        gap: 10px;
+        border-radius: var(--radius-md);
+    }
+    .addon-icon-box {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    .addon-icon-box svg {
+        width: 20px;
+        height: 20px;
+    }
+    .addon-title {
+        font-size: 0.98rem;
+    }
+    .addon-tag {
+        font-size: 0.74rem;
+    }
+    .addon-text {
+        font-size: 0.84rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 360px) {
+    .package-card {
+        padding: 20px 12px;
+    }
+    .pkg-price {
+        font-size: 2rem;
+    }
+    .pkg-name {
+        font-size: 1.22rem;
+    }
+    .btn-pkg {
+        padding: 10px 12px;
+        font-size: 0.86rem;
+    }
+    .pkg-addons-wrapper {
+        padding: 18px 10px;
     }
 }
