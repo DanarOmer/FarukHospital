@@ -2634,3 +2634,374 @@ li {
         gap: 14px;
     }
 }
+
+
+/* ==========================================================================
+   KeyLimit Packages & Pricing Section
+   ========================================================================== */
+.packages-section {
+    position: relative;
+    padding-block: var(--section-padding, 100px);
+    background: radial-gradient(circle at 50% 30%, rgba(42, 131, 95, 0.12) 0%, transparent 65%);
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    align-items: stretch;
+    margin-bottom: 50px;
+}
+
+.package-card {
+    background: var(--bg-card);
+    border: 1px solid var(--bg-card-border);
+    border-radius: var(--radius-xl);
+    padding: 38px 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-card);
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--bg-card-border-hover);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 30px rgba(139, 187, 146, 0.2);
+    background: var(--bg-card-hover);
+}
+
+.package-card.featured-package {
+    border: 2px solid var(--primary-cyan);
+    background: linear-gradient(180deg, rgba(42, 131, 95, 0.38) 0%, rgba(18, 84, 79, 0.32) 100%);
+    box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.8), 0 0 45px rgba(139, 187, 146, 0.28);
+    transform: scale(1.03);
+}
+
+.package-card.featured-package:hover {
+    transform: scale(1.03) translateY(-8px);
+    box-shadow: 0 30px 65px -10px rgba(0, 0, 0, 0.85), 0 0 55px rgba(139, 187, 146, 0.4);
+}
+
+.pkg-badge-popular {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gradient-primary);
+    color: var(--bg-dark);
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 6px 18px;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 6px 20px rgba(139, 187, 146, 0.45);
+    white-space: nowrap;
+}
+
+.pkg-badge-popular svg {
+    width: 14px;
+    height: 14px;
+}
+
+.pkg-header {
+    text-align: right;
+    margin-bottom: 22px;
+}
+
+.pkg-tier {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary-cyan);
+    margin-bottom: 6px;
+}
+
+.pkg-name {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-family: var(--font-latin), var(--font-kurdish);
+}
+
+.pkg-desc {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    min-height: 48px;
+    line-height: 1.55;
+    margin-bottom: 18px;
+}
+
+.pkg-price-box {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    direction: ltr;
+    justify-content: flex-end;
+}
+
+.pkg-currency {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-cyan);
+    font-family: var(--font-latin);
+}
+
+.pkg-price {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1;
+    font-family: var(--font-latin);
+}
+
+.pkg-period {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-left: 6px;
+    direction: rtl;
+}
+
+.pkg-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(139, 187, 146, 0.25), transparent);
+    margin-bottom: 24px;
+}
+
+.pkg-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.pkg-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.94rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+.pkg-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(139, 187, 146, 0.15);
+    color: var(--primary-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.pkg-icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.pkg-icon.highlight-icon {
+    background: var(--gradient-primary);
+    color: var(--bg-dark);
+}
+
+.pkg-feature-text strong {
+    color: var(--text-primary);
+    display: block;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.pkg-feature-text span {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.pkg-action {
+    margin-top: auto;
+}
+
+.btn-pkg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: var(--radius-md);
+    font-size: 0.98rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: var(--transition-fast);
+    box-sizing: border-box;
+}
+
+.btn-pkg-outline {
+    background: rgba(139, 187, 146, 0.08);
+    border: 1.5px solid rgba(139, 187, 146, 0.35);
+    color: var(--primary-cyan);
+}
+
+.btn-pkg-outline:hover {
+    background: rgba(139, 187, 146, 0.2);
+    border-color: var(--primary-cyan);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-pkg-primary {
+    background: var(--gradient-primary);
+    color: var(--bg-dark);
+    box-shadow: 0 8px 24px rgba(42, 131, 95, 0.35);
+    border: none;
+}
+
+.btn-pkg-primary svg {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-pkg-primary:hover {
+    box-shadow: 0 12px 30px rgba(42, 131, 95, 0.55);
+    transform: translateY(-2px);
+    color: var(--bg-dark);
+}
+
+/* Additional Options Grid */
+.pkg-addons-wrapper {
+    background: var(--bg-card);
+    border: 1px solid var(--bg-card-border);
+    border-radius: var(--radius-xl);
+    padding: 44px 36px;
+    box-shadow: var(--shadow-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.pkg-addons-header {
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.pkg-addons-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 10px 0 8px 0;
+}
+
+.pkg-addons-sub {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pkg-addons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.pkg-addon-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(139, 187, 146, 0.15);
+    border-radius: var(--radius-lg);
+    padding: 26px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: var(--transition-fast);
+}
+
+.pkg-addon-card:hover {
+    background: rgba(139, 187, 146, 0.08);
+    border-color: rgba(139, 187, 146, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.addon-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: rgba(139, 187, 146, 0.14);
+    color: var(--primary-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.addon-icon-box svg {
+    width: 24px;
+    height: 24px;
+}
+
+.addon-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.addon-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.addon-tag {
+    font-size: 0.8rem;
+    color: var(--primary-cyan);
+    font-weight: 600;
+    font-family: var(--font-latin);
+}
+
+.addon-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .package-card.featured-package {
+        transform: none;
+    }
+    .package-card.featured-package:hover {
+        transform: translateY(-8px);
+    }
+    .pkg-addons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    .pkg-addons-grid {
+        grid-template-columns: 1fr;
+    }
+    .pkg-addons-wrapper {
+        padding: 30px 20px;
+    }
+}
